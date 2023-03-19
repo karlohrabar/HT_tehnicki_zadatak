@@ -5,7 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.app.repos.UserRepository;
 
+import java.text.DecimalFormat;
 import java.util.List;
+
+import static java.lang.Math.round;
 
 @Service
 public class UserService {
@@ -23,6 +26,18 @@ public class UserService {
 
         userRepository.save(user);
         return "User saved!";
+    }
+
+    public int AvgAgeByGenre(String genre) {
+        List<Users> users = userRepository.getUsersByGenre(genre);
+        Integer sum = 0;
+        if (users.isEmpty()){
+            return sum;
+        }
+        for (Users user : users ){
+            sum+=user.getAge();
+        }
+        return (int)round(sum.doubleValue()/users.size());
     }
 
 }

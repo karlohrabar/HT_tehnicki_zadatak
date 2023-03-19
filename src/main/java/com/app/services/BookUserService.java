@@ -2,11 +2,13 @@ package com.app.services;
 
 import com.app.entities.BookUser;
 import com.app.entities.Books;
+import com.app.entities.Users;
 import com.app.repos.BookUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.awt.print.Book;
+import java.util.List;
 
 @Service
 public class BookUserService {
@@ -29,4 +31,6 @@ public class BookUserService {
         bookUserRepository.deleteById(bookUser.getId());
         return "Preference deleted!";
     }
+
+
 }

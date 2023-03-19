@@ -1,13 +1,22 @@
 package com.app.services;
 
 import com.app.entities.Books;
+import com.app.repos.BookUserRepository;
+import com.app.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.app.repos.BookRepository;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.text.DecimalFormat;
+
 @Service
 public class BookService {
     @Autowired
     private BookRepository bookRepository;
+    @Autowired
+    private UserRepository userRepository;
+
 
     public String createBook(Books book){
 
@@ -28,4 +37,16 @@ public class BookService {
 
     }
 
+    public String percentagebywriter(String name, String surname) {
+        DecimalFormat f = new DecimalFormat("##.00");
+
+        int left = userRepository.countUsersByAuthor(name, surname);
+        int right = userRepository.countUsers();
+
+        if(left==0)
+            return "00.00%";
+
+        return f.format((double)left/(double)right*100)+"%";
+
+    }
 }

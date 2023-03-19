@@ -21,4 +21,6 @@ public class BookUserController {
     public String deleteAssignedBookFromUser (@PathVariable long book_id, @PathVariable long user_id){
         return bookUserService.deleteAssignedBookFromUser(book_id,user_id);
     }
+
+
 }
