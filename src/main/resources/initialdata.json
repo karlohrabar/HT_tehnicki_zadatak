@@ -1,0 +1,73 @@
+[
+  {"_class":"com.app.entities.Users",
+    "name":"Karlo",
+    "surname":"Hrabar",
+    "age":24},
+
+  {"_class":"com.app.entities.Users",
+    "name":"Mario",
+    "surname":"Miletic",
+    "age":27},
+
+  {"_class":"com.app.entities.Users",
+    "name":"Josip",
+    "surname":"Ruzic",
+    "age":51},
+
+  {"_class":"com.app.entities.Users",
+    "name":"Mile",
+    "surname":"Josipovic",
+    "age":18},
+
+  {"_class":"com.app.entities.Users",
+    "name":"Ivan",
+    "surname":"Milat",
+    "age":30},
+
+  {"_class":"com.app.entities.Users",
+    "name":"Josko",
+    "surname":"Barada",
+    "age":60},
+
+  {"_class":"com.app.entities.Users",
+    "name":"Marko",
+    "surname":"Katic",
+    "age":24},
+
+  {"_class":"com.app.entities.Books",
+    "name":"Infinite Jest",
+    "author_name":"David Foster",
+    "author_surname":"Wallace",
+    "genre":"Postmodern"},
+
+  {"_class":"com.app.entities.Books",
+    "name":"The Master and Margarita",
+    "author_name":"Mikhail",
+    "author_surname":"Bulgakov",
+    "genre":"Fantasy"},
+
+  {"_class":"com.app.entities.Books",
+    "name":"Adults in the Room",
+    "author_name":"Yanis",
+    "author_surname":"Varoufakis",
+    "genre":"Non-fiction"},
+
+  {"_class":"com.app.entities.Books",
+    "name":"The Stand",
+    "author_name":"Stephen",
+    "author_surname":"King",
+    "genre":"Post-apocalyptic"},
+
+  {"_class":"com.app.entities.Books",
+    "name":"Breakfast of Champions",
+    "author_name":"Kurt",
+    "author_surname":"Vonnegut",
+    "genre":"Comedy"},
+
+  {"_class":"com.app.entities.Books",
+    "name":"Slaughterhouse-Five",
+    "author_name":"Kurt",
+    "author_surname":"Vonnegut",
+    "genre":"Science Fiction"}
+]
+
